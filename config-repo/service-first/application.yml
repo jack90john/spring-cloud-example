@@ -1,6 +1,6 @@
 spring:
   application:
-    name: feign-server
+    name: service-first
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/jack90john_user_center?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
