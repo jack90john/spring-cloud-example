@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: zuul-server
+server:
+  port: 9080
+zuul:
+  add-proxy-headers: true
+  routes:
+    hello:
+      path: /hello/**
+      serviceId: service-first
+      sensitiveHeaders:
+    auth:
+      path: /auth/**
+      serviceId: service-auth
+      sensitiveHeaders:
+    out:
+      path: /out
+      url: http://www.baidu.com
+  host:
+    connect-timeout-millis: 30000
+    socket-timeout-millis: 30000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:9001/eureka, http://eureka2:9002/eureka
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 130000
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 30000
+#security:
+#  oauth2:
+#    resource:
+#      #      jwt:
+#      #        key-uri: http://localhost:9098/oauth/token_key
+#      userInfoUri: http://localhost:9098/users/current
+#      preferTokenInfo: false
