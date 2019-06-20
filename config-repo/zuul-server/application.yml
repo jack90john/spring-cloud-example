@@ -12,7 +12,7 @@ zuul:
       sensitiveHeaders:
     auth:
       path: /auth/**
-      serviceId: service-auth
+      serviceId: auth-server
       sensitiveHeaders:
     out:
       path: /out
