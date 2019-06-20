@@ -36,8 +36,8 @@ ribbon:
   ReadTimeout: 30000
 security:
   oauth2:
-#    resource:
-#      #      jwt:
-#      #        key-uri: http://localhost:9098/oauth/token_key
+    resource:
+#      jwt:
+#        key-uri: http://localhost:9098/oauth/token_key
       userInfoUri: http://localhost:9098/users/current
       preferTokenInfo: false
