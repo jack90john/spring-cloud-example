@@ -35,6 +35,8 @@ ribbon:
   ConnectTimeout: 30000
   ReadTimeout: 30000
 security:
+  basic:
+    enabled: false
   oauth2:
     client:
       access-token-uri: http://localhost:9098/oauth/token
