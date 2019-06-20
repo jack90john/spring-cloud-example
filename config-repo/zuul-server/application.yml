@@ -39,5 +39,5 @@ security:
     resource:
 #      jwt:
 #        key-uri: http://localhost:9098/oauth/token_key
-      userInfoUri: http://localhost:9080/auth/users/current
+      userInfoUri: http://localhost:9098/users/current
       preferTokenInfo: false
