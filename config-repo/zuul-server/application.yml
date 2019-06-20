@@ -36,11 +36,6 @@ ribbon:
   ReadTimeout: 30000
 security:
   oauth2:
-    client:
-      access-token-uri: http://localhost:9080/auth/oauth/token
-      user-authorization-uri: http://localhost:9080/auth/oauth/authorize
-      client-id: client1
-      client-secret: 123456
     resource:
 #      jwt:
 #        key-uri: http://localhost:9098/oauth/token_key
